@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			font-family: 'HelveticaNeue';
+		}
+		header, footer, section {
+			width: 100%;
+			height: 100vh;
+		}
+		h1 {
+			text-align: center;
+			padding-top: 5%;
+		}
+		p {
+			padding-top: 5%;
+			padding-left: 25%;
+			padding-right: 25%;
+		}
+	</style>
+</head>
+<body>
+	<a id="header"></a>
+	<header onclick="next('uno')">
+		<h1>HEADER</h1>
+	</header>
+	<a id="uno"></a>
+	<section style="background-color: #fcfff5;" onclick="next('dos')">
+		<h1>titulo seccion uno</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem fuga maiores velit culpa, reiciendis nemo similique sequi necessitatibus error consequatur, dolores minus ex cumque laboriosam modi ullam? Similique, eveniet, esse.</p>
+	</section>
+	<a id="dos"></a>
+	<section style="background-color: #d1dbbd;" onclick="next('tres')">
+		<h1>titulo seccion dos</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem fuga maiores velit culpa, reiciendis nemo similique sequi necessitatibus error consequatur, dolores minus ex cumque laboriosam modi ullam? Similique, eveniet, esse.</p>
+	</section>
+	<a id="tres"></a>
+	<section style="background-color: #91aa9d;" onclick="next('cuatro')">
+		<h1>titulo seccion tres</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem fuga maiores velit culpa, reiciendis nemo similique sequi necessitatibus error consequatur, dolores minus ex cumque laboriosam modi ullam? Similique, eveniet, esse.</p>
+	</section>
+	<a id="tres"></a>
+	<section style="background-color: #3e606f;" onclick="next('cuatro')">
+		<h1>titulo seccion cuatro</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem fuga maiores velit culpa, reiciendis nemo similique sequi necessitatibus error consequatur, dolores minus ex cumque laboriosam modi ullam? Similique, eveniet, esse.</p>
+	</section>
+	<a id="cuatro"></a>
+	<section style="background-color: #193441;" onclick="next('footer')">
+		<h1>titulo seccion cinco</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem fuga maiores velit culpa, reiciendis nemo similique sequi necessitatibus error consequatur, dolores minus ex cumque laboriosam modi ullam? Similique, eveniet, esse.</p>
+	</section>
+	<a id="footer"></a>
+	<footer onclick="next('header')">
+		<h1>FOOTER</h1>
+	</footer>
+	<script>
+		function next(to) {
+			document.getElementById(to).scrollIntoView();
+		}
+	</script>
+</body>
+</html>
